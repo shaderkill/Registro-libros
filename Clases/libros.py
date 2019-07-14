@@ -5,7 +5,7 @@ lugares = {'ASIA': .7, 'AMERICA': .10, 'EUROPA': .14}
 class libro(object):
 
     def __init__(self, isbn, titulo, categoria, fecha_publicacion,
-                 lugar_publicacion, autor, estado, idioma, editorial,
+                 lugar_publicacion, estado, idioma, autor, editorial,
                  cantidad_pag, precio):
         global lugares
         self.isbn = isbn
@@ -26,8 +26,8 @@ class libro(object):
         if estado_libro == 'USADO':
             descuento = float(self.precio_neto)*.15
             pass
-        self.precio_final = (float(self.precio_neto) -
-                             descuento+(float(self.precio_neto)*.19))
+        self.precio_final = ((float(self.precio_neto) -
+                             descuento)+float(self.precio_neto)*.19)
         pass
 
     def datos_completos(self):
