@@ -1,10 +1,12 @@
 import Funciones.validadores as validar
 from Clases import personas
 persona = personas.persona
- 
+
 personas_reg = {}
 
 # -- Funciones
+
+
 def registrar_personas():
     global personas_reg
     rut = input('Ingrese el RUT de la persona (12345678-9): ')

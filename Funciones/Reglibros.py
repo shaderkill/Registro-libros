@@ -6,6 +6,8 @@ libro = libros.libro
 libros_reg = {}
 
 # -- Funciones
+
+
 def registrar_libro():
     global libros_reg
     libros_list = libros_reg.keys()

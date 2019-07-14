@@ -27,7 +27,7 @@ class libro(object):
             descuento = float(self.precio_neto)*.15
             pass
         self.precio_final = ((float(self.precio_neto) -
-                             descuento)+float(self.precio_neto)*.19)
+                              descuento)+float(self.precio_neto)*.19)
         pass
 
     def datos_completos(self):
