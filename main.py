@@ -1,11 +1,18 @@
+# -- Encode: UTF-8
+# -- Python version: 3.7.3 64 Bits
+
 # -- Funciones importadas
-from Funciones import inicio_sesion, reglibros, regpersonas
+from Funciones import inicio_sesion
+from Funciones import reglibros
+from Funciones import regpersonas
+
 
 # -- Variables del menú
 opciones_menu = ['a', 'b', 'c', 'd', 'e']
 
 
-# -- Funciones
+# -- Funciones relacionadas al menú
+# -- Selección de opción
 def abrir_funcion(opc):
     if opc is 'a':
         regpersonas.registrar_personas()
@@ -37,6 +44,8 @@ def menu_principal():
         else:
             print('no existe la opción ingresada')
     pass
+
+# -- Inicio de la aplicación
 
 
 def inicio():

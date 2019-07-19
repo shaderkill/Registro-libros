@@ -14,7 +14,7 @@ def registrar_personas():
         list_rut = personas_reg.keys()
         if rut not in list_rut:
             nombre = input('Ingrese el nombre de la persona: ')
-            fecha = validar.fecha(input('Ingrese la fecha de nacimiento: '))
+            fecha = validar.fecha(input('Ingrese la fecha de nacimiento (DD/MM/AAAA): '))
             direccion = input('Ingrese la dirección particular: ')
             telefono = input('Ingrese el número de contacto: ')
             correo = validar.correo(input('Ingrese el correo electronico: '))

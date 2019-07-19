@@ -50,7 +50,7 @@ def fecha(valor: str):
             return valor
         except Exception as e:
             print('Error: Fecha ingresada no es valida\n')
-            valor = input('Ingrese otra fecha (DD/MM/AAA): ')
+            valor = input('Ingrese otra fecha (DD/MM/AAAA): ')
     pass
 
 
