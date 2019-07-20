@@ -44,3 +44,8 @@ class libro(object):
                      '\nCantidad de paginas: ', self.cantidad_pag,
                      '\nPrecio Neto: ', self.precio_neto,
                      '\nPrecio Final: ', self.precio_final)
+
+    def __del__(self):
+        print('Libro eliminado')
+        
+        

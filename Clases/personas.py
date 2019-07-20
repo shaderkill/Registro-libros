@@ -21,3 +21,4 @@ class persona(object):
                      'Dirección Particular: ', self.direccion_particular, '\n',
                      'Telefono: ', self.telefono, '\n',
                      'Correo Electronico: ', self.correo)
+    

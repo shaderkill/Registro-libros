@@ -6,8 +6,6 @@ libro = libros.libro
 libros_reg = {}
 
 # -- Funciones
-
-
 def registrar_libro():
     global libros_reg
     libros_list = libros_reg.keys()
@@ -32,14 +30,17 @@ def registrar_libro():
                      estado, idioma, autor, editorial, cantidad_pag, precio)
         libros_reg.setdefault(isbn, titulo)
         isbn.datos_completos()
+        input("Presione una enter para volver")
     else:
         print('El libro ya se encuentra registrado')
+        input("Presione una enter para volver")
     pass
 
 
 def listar_libros():
     print('\n\nLibros registrados')
     print('\n'.join(libros_reg.values()))
+    input("Presione una enter para volver")
     pass
 
 
@@ -50,4 +51,18 @@ def buscar_libro():
         if libro == libro_buscado:
             print('Resultado de busqueda')
             res.datos_completos()
+            input("Presione una enter para volver")
+    pass
+
+
+def eliminar_libro():
+    print('Eliminar libro según su titulo')
+    libro_buscado = input('Ingrese el titulo del libro: ')
+    for res, libro in libros_reg.items():
+        if libro == libro_buscado:
+            eliminar = res
+            del res
+            print("Libro eliminado")
+    libros_reg.__delitem__(eliminar)
+    input("Presione una enter para volver")
     pass

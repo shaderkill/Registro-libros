@@ -1,5 +1,5 @@
 # Datos usuarios
-useradmin = {'admin': 'adminuser'}
+useradmin = {'admin': 'admin','root':'root'}
 
 # -- Validación de usuario y contraseña
 

@@ -8,7 +8,7 @@ from Funciones import regpersonas
 
 
 # -- Variables del menú
-opciones_menu = ['a', 'b', 'c', 'd', 'e']
+opciones_menu = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
 
 # -- Funciones relacionadas al menú
@@ -22,21 +22,28 @@ def abrir_funcion(opc):
         reglibros.listar_libros()
     if opc is 'd':
         reglibros.buscar_libro()
+    if opc is 'e':
+        reglibros.eliminar_libro()
+    if opc is 'f':
+        regpersonas.listar_personas()
     menu_principal()
 
 
 # -- Menú principal
 def menu_principal():
     while True:
+        print('\n'*50)
         print('-'*20, 'Menú principal', '-'*20,
               '\na. Registrar Personas.',
               '\nb. Registrar Libro.',
               '\nc. Listar Libros Registrados.'
-              '\nd. Buscar Libro',
-              '\ne. Salir')
+              '\nd. Buscar Libro.',
+              '\ne. Eliminar Libro.',
+              '\nf. Listar personas.'
+              '\ng. Salir.')
         opcion = input('\nOpción: ')
         if opcion in opciones_menu:
-            if opcion is 'e':
+            if opcion is 'g':
                 print('\n'*50, 'Finalizado')
                 break
             abrir_funcion(opcion)

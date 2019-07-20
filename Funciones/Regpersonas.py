@@ -6,7 +6,12 @@ personas_reg = {}
 
 # -- Funciones
 
-
+def listar_personas():
+    print("\nPersonas Registradas: ")
+    print("\n".join(personas_reg.values()))
+    input("Presione una enter para volver")
+    
+          
 def registrar_personas():
     global personas_reg
     rut = input('Ingrese el RUT de la persona (12345678-9): ')
@@ -23,8 +28,10 @@ def registrar_personas():
             rut.datos_completos()
             print('Persona registrada con exito')
             print('\n')
+            input("Presione una enter para volver")
         else:
             print('Persona ya se encuentra registrada\n')
+            input("Presione una enter para volver")
     else:
         print('RUT ingresado no es valido\n')
         registrar_personas()
